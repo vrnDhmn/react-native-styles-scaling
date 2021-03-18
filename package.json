@@ -1,0 +1,41 @@
+{
+  "name": "react-native-scaling",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Product Modules",
+  "author": {
+    "name": "MetricStream Open Source",
+    "email": "opensource@metricstream.com"
+  },
+  "homepage": "http://opensource.metricstream.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metricstream/react-native-scaling"
+  },
+  "scripts": {
+    "format": "prettier-eslint --write --single-quote --no-semi '*.js'",
+    "preinstall": "rm -rf yarn.lock",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": ["prettier-eslint --write --single-quote --no-semi", "git add"]
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "7.2.3",
+    "eslint-config-prettier": "2.3.0",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-flowtype": "2.35.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-prettier": "2.2.0",
+    "eslint-plugin-react": "7.3.0",
+    "flow-bin": "0.53.1",
+    "flow-webpack-plugin": "1.1.0",
+    "gitignore": "git+ssh://git@msgit.metricstream.com:mobility/gitignore.git#1b18551e",
+    "husky": "0.14.3",
+    "lint-staged": "4.0.4",
+    "prettier-eslint-cli": "4.2.1"
+  }
+}
